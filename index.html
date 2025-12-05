@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yellow Kitchen</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .logo span { color: #ffcc00; }
+
+    .nav-icons {
+      display: flex;
+      gap: 20px;
+      color: #666;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+    }
+
+    .text h1 {
+      font-size: 108px;
+      line-height: 1.2;
+    }
+
+    .buttons {
+      width: 300px;
+      height: 100px;
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      
+    }
+
+    .buttons button {
+      width: 200px;
+      border: 1px solid #ffcc00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: white;
+      font-weight: bold;
+      cursor: pointer;
+      
+    }
+
+    .buttons button:hover {
+      background: #ffcc00;
+    }
+
+    .food img {
+      width: 820px;
+      border-radius: 50%;
+    }
+
+    .rest-section {
+      padding: 40px 60px;
+    }
+
+    .rest-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .rest-slider {
+      display: flex;
+      gap: 25px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+
+    .card img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+      align-items: center;
+      gap: 100px;
+      margin-left: 100px;
+    }
+
+    .show-all {
+      float: right;
+      margin-top: -70px;
+      background: #e6e9f2;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+    }
+
+    .address-box {
+      margin-top: 60px;
+      padding: 50px;
+      background: #eef0f7;
+      text-align: center;
+      border-top: 2px solid #5fa8eb;
+    }
+
+    .address-box h3 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .address-box input {
+      width: 300px;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 20px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .address-box button {
+      padding: 12px 20px;
+      background: #ffdd33;
+      border: none;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .stats {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      font-size: 22px;
+    }
+
+    .stats div {
+      text-align: center;
+    }
+
+    .stats .num {
+      font-size: 35px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .map-section {
+      width: 100%;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .map-section img {
+      width: 70%;
+      border-radius: 15px;
+    }
+
+    .insta-section {
+      padding: 40px 60px;
+    }
+
+    .insta-grid {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .insta-grid img {
+      width: 23%;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #2d2f3b;
+      color: white;
+      padding: 40px 60px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffdd33;
+      text-decoration: none;
+    }
+  .f4{
+    text-decoration: none;
+    color: black;
+  }
+  .f1{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><span>yellow</span>kitchen</div>
+    <div class="nav-icons">
+      <span>👤 <a class="f4" href="/log in.html">Log in </a></span>
+      <span>🛒 0</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="text">
+      <h1>Your Food court<br>at home</h1>
+      <div class="buttons">
+        <button>Delivery<br><small>Order in</small></button>
+        <button>Takeout<br><small>Grab and go</small></button>
+      </div>
+    </div>
+    <div class="food">
+      <img src="salad-main.svg">
+    </div>
+  </main>
+
+  <section class="rest-section">
+    <h2>Restaurants</h2>
+ 
+    <button class="f1" onclick="toggleImage()">Show All</button>
+
+<div id="images" style="display:none; margin-top:20px;">
+  <img src="/AA1rTvyC.jpg" width="200">
+
+</div>
+
+<script>
+function toggleImage() {
+  let box = document.getElementById("images");
+
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+</script>
+
+
+    <div class="rest-slider">
+      <div class="card">
+        <img src="burger.svg">
+        <p></p>
+      </div>
+
+      <div class="card">
+        <img src="pasta.svg">
+        <p></p>
+      </div>
+
+      <div class="card">
+        <img src="salad.svg">
+        <p></p>
+      </div>
+
+      <div class="card">
+        <img src="bo.svg">
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="address-box">
+    <h3>Your nearest restaurants</h3>
+    <p>Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+
+    <input type="text" placeholder=" Enter delivery address">
+    <button>send</button>
+  </div>
+
+  <div class="stats">
+    <div>
+      <div class="num">1</div>
+      kitchen
+    </div>
+    <div>
+      <div class="num">11</div>
+      specialties
+    </div>
+    <div>
+      <div class="num">11</div>
+      restaurants
+    </div>
+    <div>
+      <div class="num">1</div>
+      transport costs
+    </div>
+  </div>
+
+  <div class="map-section">
+    <img src="map.svg">
+  </div>
+
+  <div class="insta-section">
+    <h2>#yellowkitchens on Instagram</h2>
+
+    <div class="insta-grid">
+      <img src="insta1.svg">
+      <img src="insta2.svg">
+      <img src="insta3.svg">
+      <img src="insta4.svg">
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h3>yellowkitchen</h3>
+      <p>Order the best meals from your favorite restaurants.</p>
+    </div>
+
+    <div>
+      <h4>About us</h4>
+      <p>Careers</p>
+      <p>Our kitchens</p>
+      <p>Locations</p>
+    </div>
+
+    <div>
+      <h4>Get help</h4>
+      <p>Support</p>
+      <p>FAQ</p>
+      <p>Safety</p>
+    </div>
+
+    <div>
+      <h4>Contact us</h4>
+      <p>Email: support@yellow.com</p>
+      <p>Phone: +33 555 123 123</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+</body>
+</html>
